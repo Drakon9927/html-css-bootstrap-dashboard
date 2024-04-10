@@ -26,3 +26,33 @@ header{
 .myheight10{
     height: 10%;
 }
+
+/* Main */
+
+main{
+    margin-left: 11rem;
+    background-color: #F7F7F7;
+}
+
+.mybg-lightblue{
+    background-color: #1B72E8;
+}
+
+.badge.rounded-pill {
+    background-color: #165BBA !important;
+}
+
+#arrows{
+    font-size: 20px;
+}
+
+#studentbutton{
+    background-color: #1B72E8;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+}
