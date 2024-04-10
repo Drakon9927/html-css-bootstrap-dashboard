@@ -56,3 +56,55 @@ main{
     font-size: 20px;
     margin-left: 10px;
 }
+
+.topbox{
+    background-color: #F7F7F7;
+    border-bottom: 1px solid rgba(53,52,52,0.16);
+   
+}
+
+.myroundborder{
+    border-radius: 8px;
+
+    border: 1px solid  rgba(53,52,52,0.16); 
+}
+
+/* Tabella  */
+
+.table-custom th:first-child, .table-custom td:first-child {
+    width: 60%;
+}
+.table-custom th, .table-custom td {
+    width: 10%;
+}
+
+.w-8{
+    width: 8%;
+    padding: 5px;
+}
+
+.mycolouredspan{
+    border-radius: 14px;
+    border: none;
+    color: white;
+    padding: 8px;
+}
+
+.green{
+    background-color: green;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.red{
+    background-color: #DC3545;
+}
+
+td i{
+    background-color: white;
+    border: 2px solid grey;
+    margin: 2px;
+    padding: 3px;
+}
