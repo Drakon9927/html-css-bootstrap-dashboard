@@ -146,6 +146,11 @@ i .fa-bell {
     width: auto;
 }
 
+.dropdown-menu {
+    min-width: auto; /* Imposta la larghezza minima a auto */
+  }
+
+
 
 /* Media Query */
 /* Tablet */

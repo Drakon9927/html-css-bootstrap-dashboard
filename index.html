@@ -33,39 +33,35 @@
         </div>
 
         <div class="col-lg-1 col-md-1 col-sm-1">
-            
-           
-              <i class="fa fa-list d-lg-inline-block d-md-none d-sm-none"></i>
-              <i class="fa fa-question-circle d-lg-inline-block d-md-none d-sm-none"></i>
-              <i class="fa fa-ellipsis-v d-lg-inline-block d-md-none d-sm-none"></i>
 
-              
-            <!-- Icona campana come trigger per off-canvas -->
 
-            <i class="fa fa-bell" style="cursor: pointer; color: orange;" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+          <i class="fa fa-list d-lg-inline-block d-md-none d-sm-none"></i>
+          <i class="fa fa-question-circle d-lg-inline-block d-md-none d-sm-none"></i>
+          <i class="fa fa-ellipsis-v d-lg-inline-block d-md-none d-sm-none"></i>
 
-          <!-- Offcanvas -->
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                <p>Profilo</p>
-                <p>Fatturazione</p>
-                <p>Logout</p>
-              </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <!-- Contenuto del tuo off-canvas qui -->
 
-            </div>
+          <!-- Icona campana come trigger per off-canvas -->
+
+          <div class="dropdown w-25 d-inline-block">
+            <!-- Il tuo elemento <i> personalizzato con gli attributi necessari per attivare il dropdown -->
+            <i id="iconDropdown" class="fa fa-bell" style="color: orange;" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"></i>
+            <!-- Il menu dropdown -->
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
           </div>
-            
+
 
         </div>
-
       </div>
+
+
+    </div>
+
+    </div>
 
   </header>
 
@@ -114,7 +110,79 @@
           </div>
 
           <div class="col-4 fs-4">
-            <p>Nuovo studente <button id="studentbutton">+</button></p>
+            <p>Nuovo studente <button id="studentbutton" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas">+</button>
+
+            <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <!-- Corpo Offcanvas -->
+              <div class="offcanvas-body">
+
+                <div class="d-flex row">
+                  <div class="col-6">
+                    <label for="exampleDataList" class="form-label">Nome</label>
+                    <input class="form-control mb-3" list="datalistOptions" id="exampleDataList">
+                    
+                    <label for="exampleDataList" class="form-label">Email</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                      <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <label for="exampleDataList" class="form-label">Cognome</label>
+                    <input class="form-control mb-3" list="datalistOptions" id="exampleDataList">
+
+                    <label for="exampleDataList" class="form-label">Password</label>
+                    <input class="form-control mb-3" list="datalistOptions" id="exampleDataList">
+                  </div>
+
+                </div>
+
+                <div class="col-12">
+                  <label for="exampleDataList" class="form-label">Indirizzo</label>
+                  <input class="form-control mb-3" list="datalistOptions" id="exampleDataList">
+                </div>
+
+                <div class="d-flex row">
+                  <div class="col-6">
+                    <label for="exampleDataList" class="form-label">Città</label>
+                    <input class="form-control mb-3" list="datalistOptions" id="exampleDataList">
+                  </div>
+                  <div class="col-3">
+                    <label for="exampleDataList" class="form-label">Stato</label>
+                    <div class="input-group">
+                      <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                        <option selected>Scegli...</option>
+                        <option value="1">Italia</option>
+                        <option value="2">Germania</option>
+                        <option value="3">Francia</option>
+                      </select>
+                     
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <label for="exampleDataList" class="form-label">CAP</label>
+                  <input class="form-control mb-3" list="datalistOptions" id="exampleDataList">
+                  </div>
+
+                </div>
+                <!-- Fine flex row -->
+
+                <div class="col-12">
+                  <div class="input-group">
+                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                  </div>
+
+                 
+                  <input type="checkbox"> <span>Seleziona per proseguire</span>
+                </div>
+              </div>
+            </div>
+            </p>
 
           </div>
 
