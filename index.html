@@ -17,55 +17,52 @@
     <div class="container-fluid">
 
       <div class="d-flex row w-100">
-        <div class="col-1">
+        <div class="col-lg-1 col-md-1 col-sm-1">
           <img class="pt-2 displaynone" src="./img/logo.svg" alt="">
-          <img class="desktopdisplay w-100 mobilewidth" src="./img/mobile-logo.png" alt="">
+          <img class="desktopdisplay mobilewidth" src="./img/mobile-logo.png" alt="">
 
         </div>
 
-        <div class="col-8 w-75">
+        <div class="col-lg-6 col-md-4 col-sm-4 w-75">
           <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
             <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"
               aria-label="Username" aria-describedby="basic-addon1">
           </div>
 
-
-
-
         </div>
 
-        <div class="col-1">
-          <div class="displaynone">
-            <i class="fa fa-list"></i>
-            <i class="fa fa-question-circle"></i>
-            <i class="fa fa-ellipsis-v"></i>
-          </div>
+        <div class="col-lg-1 col-md-1 col-sm-1">
+            
+           
+              <i class="fa fa-list d-lg-inline-block d-md-none d-sm-none"></i>
+              <i class="fa fa-question-circle d-lg-inline-block d-md-none d-sm-none"></i>
+              <i class="fa fa-ellipsis-v d-lg-inline-block d-md-none d-sm-none"></i>
 
-          <!-- Icona campana come trigger per off-canvas -->
-          <div class="displayblock">
-            <i class="fa fa-bell displayblock" style="cursor: pointer; color: orange;" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+              
+            <!-- Icona campana come trigger per off-canvas -->
 
-            <!-- Offcanvas -->
-            <div class="offcanvas offcanvas-end h-25" tabindex="-1" id="offcanvasExample"
-              aria-labelledby="offcanvasExampleLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                  <p>Profilo</p>
-                  <p>Fatturazione</p>
-                  <p>Logout</p>
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <!-- Contenuto del tuo off-canvas qui -->
+            <i class="fa fa-bell" style="cursor: pointer; color: orange;" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
 
-              </div>
+          <!-- Offcanvas -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <p>Profilo</p>
+                <p>Fatturazione</p>
+                <p>Logout</p>
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body">
+              <!-- Contenuto del tuo off-canvas qui -->
 
-
+            </div>
           </div>
+            
+
         </div>
 
       </div>
@@ -96,7 +93,7 @@
   <!-- Main -->
   <main class="w-100">
     <div class="container-fluid w-100 mybg-lightblue">
-      <div class="col-12 text-white pt-3 pb-3">
+      <div class="col-lg-12 col-md-8 text-white pt-3 pb-3">
         <div class="d-flex row myflexcolumn">
 
           <div class="col-4">
@@ -133,7 +130,7 @@
       <!-- 2 colonne verticali -->
       <div class="d-flex row flex-wrap">
 
-        <div class="col-lg-6 col-md-10 col-sm-10">
+        <div class="col-lg-6 col-md-9 col-sm-10">
           <div class="container-fluid w-100 myroundborder">
             <div class="topbox w-100">
               <h2 class="mb-4">Prossime Classi</h2>
@@ -338,7 +335,7 @@
 
         </div>
         <!-- 2° colonna -->
-        <div class="col-lg-5 col-md-10 col-sm-10">
+        <div class="col-lg-5 col-md-9 col-sm-10">
 
           <div class="container-fluid w-100 myroundborder mb-3">
             <div class="topbox w-100">

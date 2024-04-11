@@ -142,16 +142,21 @@ table img {
     display: none;
 }
 
+i .fa-bell {
+    width: auto;
+}
+
+
 /* Media Query */
 /* Tablet */
 @media screen and (max-width: 840px) {
 
-    .displayblock {
-        display: block;
+    .displaynone>i:last-child {
+        display: block; !important
     }
 
     .displaynone {
-        display: none;
+        display: none; 
     }
 
     .sidebar {
@@ -170,6 +175,12 @@ table img {
         width: calc();
     }
 
+    .mobilewidth{
+        height: 50px;
+        width: 40px;
+        min-width: 40px;
+       }
+
 
 }
 
@@ -182,12 +193,5 @@ table img {
     gap: 10px;
     
    }
-
-   .mobilewidth{
-    height: 50px;
-    min-width: 40px;
-   }
-
-
 
 }
