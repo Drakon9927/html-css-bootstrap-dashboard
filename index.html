@@ -1,371 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container-fluid">
+  <!-- Header -->
+  <header>
+    <div class="container-fluid">
 
-            <div class="d-flex row w-100">
-                <div class="col-1">
-                    <img class="pt-2" src="./img/logo.svg" alt="">
-    
-                </div>
-    
-                <div class="col-10">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-
-
-                    
-    
-                </div>
-    
-                <div class="col-1">
-                    fa 
-                    fa
-                    fa
-                    fa
-    
-                </div>
-
-            </div>
+      <div class="d-flex row w-100">
+        <div class="col-1">
+          <img class="pt-2 displaynone" src="./img/logo.svg" alt="">
+          <img class="desktopdisplay w-100 mobilewidth" src="./img/mobile-logo.png" alt="">
 
         </div>
 
-    </header>
-    
-    <!-- Sidebar -->
-    <div class="sidebar fixed-top h-100 text-white">
-        <div class="container h-100">
-            <div class="d-flex flex-column justify-content-space-between h-100 text-center pt-3">
+        <div class="col-8 w-75">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"
+              aria-label="Username" aria-describedby="basic-addon1">
+          </div>
 
-                <div class="col-11 myheight90">
-                    <p>Home</p>
-                    <p>Stats</p>
-                    <p>Signals</p>
-                </div>
-    
-                <div class="col-1 myheight10 text-center w-100">
-                    <p>Admin</p>
-                </div>
 
-            </div>
-            
+
+
         </div>
+
+        <div class="col-1">
+          <div class="displaynone">
+            <i class="fa fa-list"></i>
+            <i class="fa fa-question-circle"></i>
+            <i class="fa fa-ellipsis-v"></i>
+          </div>
+
+          <!-- Icona campana come trigger per off-canvas -->
+          <div class="displayblock">
+            <i class="fa fa-bell displayblock" style="cursor: pointer; color: orange;" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+
+            <!-- Offcanvas -->
+            <div class="offcanvas offcanvas-end h-25" tabindex="-1" id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                  <p>Profilo</p>
+                  <p>Fatturazione</p>
+                  <p>Logout</p>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <!-- Contenuto del tuo off-canvas qui -->
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar fixed-top h-100 text-white">
+    <div class="container h-100">
+      <div class="d-flex flex-column justify-content-space-between h-100 text-center pt-3">
+
+        <div class="col-11 myheight90">
+          <p><i class="fa fa-home" style="font-size:24px"></i> <span class="displaynone">Home</span></p>
+          <p><i class="fa fa-bar-chart" style="font-size:24px"></i><span class="displaynone">Stats</span></p>
+          <p><i class="fa fa-signal" style="font-size:24px"></i><span class="displaynone">Signals</span></p>
+        </div>
+
+        <div class="col-1 myheight10 text-center w-100">
+          <p><i class="fa fa-gear" style="font-size:24px"></i><span class="displaynone">Admin</span></p>
+        </div>
+
+      </div>
 
     </div>
 
-    <!-- Main -->
-    <main class="w-100">
-        <div class="container-fluid w-100 mybg-lightblue">
-            <div class="col-12 text-white pt-3 pb-3">
-                <div class="d-flex row">
+  </div>
 
-                    <div class="col-4">
-                        <h3 class="d-inline-block">Boolean</h3> <span class="badge rounded-pill text-bg-primary">Piano Blaze</span> <br>
-                        <span class="badge rounded-pill text-bg-primary">3 app</span>
-                        <span id="arrows">&raquo;</span>
-                        <span class="badge rounded-pill text-bg-primary">Boolean mobile app</span>
-                        <span class="badge rounded-pill text-bg-primary">Boolean web app</span>
-                        <span class="badge rounded-pill text-bg-primary">Boolean blog app</span>
-    
-                    </div>
-        
-                    <div class="col-4 fs-3">
-                        <p>Studenti online negli ultimi 30 minuti</p>
-                        <p>125</p>
-        
-                    </div>
-        
-                    <div class="col-4 fs-4">
-                        <p>Nuovo studente <button id="studentbutton">+</button></p>
-        
-                    </div>
+  <!-- Main -->
+  <main class="w-100">
+    <div class="container-fluid w-100 mybg-lightblue">
+      <div class="col-12 text-white pt-3 pb-3">
+        <div class="d-flex row myflexcolumn">
 
-                </div>
-               
-    
-            </div>
-    
-        </div>
-       <!-- Fine col-12 -->
+          <div class="col-4">
+            <h3 class="d-inline-block">Boolean</h3> <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+            <br>
+            <span class="badge rounded-pill text-bg-primary">3 app</span>
+            <span id="arrows">&raquo;</span>
+            <span class="badge rounded-pill text-bg-primary displaynone">Boolean mobile app</span>
+            <span class="badge rounded-pill text-bg-primary displaynone">Boolean web app</span>
+            <span class="badge rounded-pill text-bg-primary displaynone">Boolean blog app</span>
 
-        <div class="container-fluid py-4 px-1">
-            <!-- 2 colonne verticali -->
-            <div class="d-flex row">
+          </div>
 
-                <div class="col-6">
-                    <div class="container-fluid w-100 myroundborder">
-                        <div class="topbox w-100">
-                            <h2 class="mb-4">Prossime Classi</h2>
-                        </div>
-    
-                        <div class="table-responsive">
-                            <!-- Tabella -->
-                            <table class="table table-light table-custom fw-bold">
-                              <thead>
-                                <tr>
-                                  <th>Nome</th>
-                                  <th class="text-center">Data Inizio</th>
-                                  <th class="text-center">ROI</th>
-                                  <th class="text-center">Stato</th>
-                                  <th class="text-center">Azioni</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <!-- Riga 1 -->
-                                <tr>
-                                  <td>
-                                    <img class="w-8" src="./img/class-avatar.jpg" alt="">
-                                    <span>Classe 75</span>
-                                  </td>
-                                  <td>15 Feb 2021</td>
-                                  <td class="text-center">20%</td>
-                                  <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
-                                  <td>
-                                    <i class="fa fa-pencil" style="font-size:36px"></i>
-                                    <i class="fa fa-trash-o" style="font-size:36px"></i>
-                                  </td>
-                                </tr>
-                                <!-- Riga 2 -->
-                                <tr>
-                                    <td>
-                                      <img class="w-8" src="./img/class-avatar.jpg" alt="">
-                                      <span>Classe 76</span>
-                                    </td>
-                                    <td>16 Feb 2021</td>
-                                    <td class="text-center">20%</td>
-                                    <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
-                                    <td>
-                                      <i class="fa fa-pencil" style="font-size:36px"></i>
-                                      <i class="fa fa-trash-o" style="font-size:36px"></i>
-                                    </td>
-                                  </tr>
-                                  <!-- Riga 3  -->
-                                  <tr>
-                                    <td>
-                                      <img class="w-8" src="./img/class-avatar.jpg" alt="">
-                                      <span>Classe 77</span>
-                                    </td>
-                                    <td>17 Feb 2021</td>
-                                    <td class="text-center">20%</td>
-                                    <td class="p-3"><span class="mycolouredspan orange text-center mx-3">process</span></td>
-                                    <td>
-                                      <i class="fa fa-pencil" style="font-size:36px"></i>
-                                      <i class="fa fa-trash-o" style="font-size:36px"></i>
-                                    </td>
-                                  </tr>
-                                  <!-- Riga 4  -->
-                                  <tr>
-                                    <td>
-                                      <img class="w-8" src="./img/class-avatar.jpg" alt="">
-                                      <span>Classe 78</span>
-                                    </td>
-                                    <td>18 Feb 2021</td>
-                                    <td class="text-center">20%</td>
-                                    <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
-                                    <td>
-                                      <i class="fa fa-pencil" style="font-size:36px"></i>
-                                      <i class="fa fa-trash-o" style="font-size:36px"></i>
-                                    </td>
-                                  </tr>
-                                  <!-- Riga 5 -->
-                                  <tr>
-                                    <td>
-                                      <img class="w-8" src="./img/class-avatar.jpg" alt="">
-                                      <span>Classe 79</span>
-                                    </td>
-                                    <td>19 Feb 2021</td>
-                                    <td class="text-center">20%</td>
-                                    <td class="p-3"><span class="mycolouredspan red text-center mx-3">failed</span></td>
-                                    <td>
-                                      <i class="fa fa-pencil" style="font-size:36px"></i>
-                                      <i class="fa fa-trash-o" style="font-size:36px"></i>
-                                    </td>
-                                  </tr>
-                                  <!-- Riga 6  -->
-                                  <tr>
-                                    <td>
-                                      <img class="w-8" src="./img/class-avatar.jpg" alt="">
-                                      <span>Classe 80</span>
-                                    </td>
-                                    <td>20 Feb 2021</td>
-                                    <td class="text-center">20%</td>
-                                    <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
-                                    <td>
-                                      <i class="fa fa-pencil" style="font-size:36px"></i>
-                                      <i class="fa fa-trash-o" style="font-size:36px"></i>
-                                    </td>
-                                  </tr>
-                                  <!-- Riga 7  -->
-                                  <tr>
-                                    <td>
-                                      <img class="w-8" src="./img/class-avatar.jpg" alt="">
-                                      <span>Classe 81</span>
-                                    </td>
-                                    <td>21 Feb 2021</td>
-                                    <td class="text-center">20%</td>
-                                    <td class="p-3"><span class="mycolouredspan red text-center mx-3">failed</span></td>
-                                    <td>
-                                      <i class="fa fa-pencil" style="font-size:36px"></i>
-                                      <i class="fa fa-trash-o" style="font-size:36px"></i>
-                                    </td>
-                                  </tr>
-                                  <!-- Riga 8  -->
-                                  <tr>
-                                    <td>
-                                      <img class="w-8" src="./img/class-avatar.jpg" alt="">
-                                      <span>Classe 82</span>
-                                    </td>
-                                    <td>22 Feb 2021</td>
-                                    <td class="text-center">20%</td>
-                                    <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
-                                    <td>
-                                      <i class="fa fa-pencil" style="font-size:36px"></i>
-                                      <i class="fa fa-trash-o" style="font-size:36px"></i>
-                                    </td>
-                                  </tr>
-                                 
-                              </tbody>
-                            </table>
-                        </div>
-                    </div>
-    
-                    <div class="container-fluid w-100 myroundborder">
-                        <div class="topbox w-100">
-                            <h2 class="mb-4">F.A.Q.</h2>
-                        </div>
-                        <!-- Accordion -->
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                            <div class="accordion-item p-3">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button  fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                  Come aggiungere un nuovo studente?
-                                </button>
-                              </h2>
-                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                                <div class="accordion-body">
-                                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item p-3">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                  Come posso accedere alle informazioni del mio account?
-                                </button>
-                              </h2>
-                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                                <div class="accordion-body">
-                                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-item p-3">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                  Posso usare questa dashboard da mobile?
-                                </button>
-                              </h2>
-                              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                                <div class="accordion-body">
-                                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-    
-                    </div>
-                    
-                </div>
-                <!-- 2° colonna -->
-                <div class="col-5">
+          <div class="col-4 fs-3">
+            <p>Studenti online negli ultimi 30 minuti</p>
+            <p>125</p>
 
-                    <div class="container-fluid w-100 myroundborder mb-3">
-                        <div class="topbox w-100">
-                            <h2 class="mb-4">Todo</h2>
-                        </div>
-                        <!-- checkbox1 -->
-                        <div class="container p-2">
-                            <div class="checkboxcontainer w-100 fw-bold p-2">
-                                <input type="checkbox">
-                                <label for="option1">Kickoff nuove classi</label>
-    
-                            </div>
+          </div>
 
-                            <!-- checkbox2 -->
-                            <div class="checkboxcontainer w-100 fw-bold p-2">
-                                <input type="checkbox">
-                                <label for="option1">Lezione su Bootstrap 5 in classe #75</label>
-    
-                            </div>
+          <div class="col-4 fs-4">
+            <p>Nuovo studente <button id="studentbutton">+</button></p>
 
-                            <!-- checkbox3 -->
-
-                            <div class="checkboxcontainer w-100 fw-bold p-2">
-                                <input type="checkbox">
-                                <label for="option1">Controllare username github studenti</label>
-    
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="container-fluid w-100 myroundborder mb-3 bg-white">
-                        <div class="container p-2">
-                            <img class="w-100" src="./img/stats.jpeg" alt="">
-                        <div class="container border-bottom">
-                            <h3>Utenti attivi</h3>
-                            <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                        </div>
-
-                        <div class="container border-bottom">
-                            <p>Gennaio: 1200</p>
-                        </div>
-
-                        <div class="container border-bottom">
-                            <p>Febbraio: 800</p>
-                        </div>
-
-                        <div class="container border-bottom">
-                            <p>Marzo: 1500</p>
-                        </div>
-
-                        <div class="container border-bottom">
-                            <a href="#">Visualizza report approfondito</a>
-                        </div>
-
-
-                        </div>
-
-
-                        
-
-                    </div>
-                    
-
-
-                </div>
-                <!-- Flex end -->
-            </div>
-            
+          </div>
 
         </div>
-    </main>
-   
-    <!-- Javascript accordion -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> 
+
+
+      </div>
+
+    </div>
+    <!-- Fine col-12 -->
+
+    <div class="container-fluid py-4 px-1">
+      <!-- 2 colonne verticali -->
+      <div class="d-flex row flex-wrap">
+
+        <div class="col-lg-6 col-md-10 col-sm-10">
+          <div class="container-fluid w-100 myroundborder">
+            <div class="topbox w-100">
+              <h2 class="mb-4">Prossime Classi</h2>
+            </div>
+
+            <div class="table-responsive">
+              <!-- Tabella -->
+              <table class="table table-light table-custom fw-bold">
+                <thead>
+                  <tr>
+                    <th class="pt-5">Nome</th>
+                    <th class="text-center">Data Inizio</th>
+                    <th class="text-center">ROI</th>
+                    <th class="text-center">Stato</th>
+                    <th class="text-center">Azioni</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Riga 1 -->
+                  <tr>
+                    <td>
+                      <img class="tableimg" src="./img/class-avatar.jpg" alt="">
+                      <span>Classe 75</span>
+                    </td>
+                    <td>15 Feb 2021</td>
+                    <td class="text-center">20%</td>
+                    <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
+                    <td>
+                      <i class="fa fa-pencil" style="font-size:24px"></i>
+                      <i class="fa fa-trash-o" style="font-size:24px"></i>
+                    </td>
+                  </tr>
+                  <!-- Riga 2 -->
+                  <tr>
+                    <td>
+                      <img class="tableimg" src="./img/class-avatar.jpg" alt="">
+                      <span>Classe 76</span>
+                    </td>
+                    <td>16 Feb 2021</td>
+                    <td class="text-center">20%</td>
+                    <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
+                    <td>
+                      <i class="fa fa-pencil" style="font-size:24px"></i>
+                      <i class="fa fa-trash-o" style="font-size:24px"></i>
+                    </td>
+                  </tr>
+                  <!-- Riga 3  -->
+                  <tr>
+                    <td>
+                      <img class="tableimg" src="./img/class-avatar.jpg" alt="">
+                      <span>Classe 77</span>
+                    </td>
+                    <td>17 Feb 2021</td>
+                    <td class="text-center">20%</td>
+                    <td class="p-3"><span class="mycolouredspan orange text-center mx-3">process</span></td>
+                    <td>
+                      <i class="fa fa-pencil" style="font-size:24px"></i>
+                      <i class="fa fa-trash-o" style="font-size:24px"></i>
+                    </td>
+                  </tr>
+                  <!-- Riga 4  -->
+                  <tr>
+                    <td>
+                      <img class="tableimg" src="./img/class-avatar.jpg" alt="">
+                      <span>Classe 78</span>
+                    </td>
+                    <td>18 Feb 2021</td>
+                    <td class="text-center">20%</td>
+                    <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
+                    <td>
+                      <i class="fa fa-pencil" style="font-size:24px"></i>
+                      <i class="fa fa-trash-o" style="font-size:24px"></i>
+                    </td>
+                  </tr>
+                  <!-- Riga 5 -->
+                  <tr>
+                    <td>
+                      <img class="tableimg" src="./img/class-avatar.jpg" alt="">
+                      <span>Classe 79</span>
+                    </td>
+                    <td>19 Feb 2021</td>
+                    <td class="text-center">20%</td>
+                    <td class="p-3"><span class="mycolouredspan red text-center mx-3">failed</span></td>
+                    <td>
+                      <i class="fa fa-pencil" style="font-size:24px"></i>
+                      <i class="fa fa-trash-o" style="font-size:24px"></i>
+                    </td>
+                  </tr>
+                  <!-- Riga 6  -->
+                  <tr>
+                    <td>
+                      <img class="tableimg" src="./img/class-avatar.jpg" alt="">
+                      <span>Classe 80</span>
+                    </td>
+                    <td>20 Feb 2021</td>
+                    <td class="text-center">20%</td>
+                    <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
+                    <td>
+                      <i class="fa fa-pencil" style="font-size:24px"></i>
+                      <i class="fa fa-trash-o" style="font-size:24px"></i>
+                    </td>
+                  </tr>
+                  <!-- Riga 7  -->
+                  <tr>
+                    <td>
+                      <img class="tableimg" src="./img/class-avatar.jpg" alt="">
+                      <span>Classe 81</span>
+                    </td>
+                    <td>21 Feb 2021</td>
+                    <td class="text-center">20%</td>
+                    <td class="p-3"><span class="mycolouredspan red text-center mx-3">failed</span></td>
+                    <td>
+                      <i class="fa fa-pencil" style="font-size:24px"></i>
+                      <i class="fa fa-trash-o" style="font-size:24px"></i>
+                    </td>
+                  </tr>
+                  <!-- Riga 8  -->
+                  <tr>
+                    <td>
+                      <img class="tableimg" src="./img/class-avatar.jpg" alt="">
+                      <span>Classe 82</span>
+                    </td>
+                    <td>22 Feb 2021</td>
+                    <td class="text-center">20%</td>
+                    <td class="p-3"><span class="mycolouredspan green text-center mx-3">Done</span></td>
+                    <td>
+                      <i class="fa fa-pencil" style="font-size:24px"></i>
+                      <i class="fa fa-trash-o" style="font-size:24px"></i>
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="container-fluid w-100 myroundborder mt-5 mb-5">
+            <div class="topbox w-100">
+              <h2 class="mb-4">F.A.Q.</h2>
+            </div>
+            <!-- Accordion -->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item p-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button  fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Come aggiungere un nuovo studente?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item p-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Come posso accedere alle informazioni del mio account?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item p-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Posso usare questa dashboard da mobile?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- 2° colonna -->
+        <div class="col-lg-5 col-md-10 col-sm-10">
+
+          <div class="container-fluid w-100 myroundborder mb-3">
+            <div class="topbox w-100">
+              <h2 class="mb-4">Todo</h2>
+            </div>
+            <!-- checkbox1 -->
+            <div class="container p-2">
+              <div class="checkboxcontainer w-100 fw-bold p-2">
+                <input type="checkbox">
+                <label for="option1">Kickoff nuove classi</label>
+
+              </div>
+
+              <!-- checkbox2 -->
+              <div class="checkboxcontainer w-100 fw-bold p-2">
+                <input type="checkbox">
+                <label for="option1">Lezione su Bootstrap 5 in classe #75</label>
+
+              </div>
+
+              <!-- checkbox3 -->
+
+              <div class="checkboxcontainer w-100 fw-bold p-2">
+                <input type="checkbox">
+                <label for="option1">Controllare username github studenti</label>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="container-fluid w-100 myroundborder mb-3 bg-white">
+            <div class="container p-2">
+              <img class="w-100" src="./img/stats.jpeg" alt="">
+              <div class="container border-bottom">
+                <h3>Utenti attivi</h3>
+                <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+              </div>
+
+              <div class="container border-bottom">
+                <p>Gennaio: 1200</p>
+              </div>
+
+              <div class="container border-bottom">
+                <p>Febbraio: 800</p>
+              </div>
+
+              <div class="container border-bottom">
+                <p>Marzo: 1500</p>
+              </div>
+
+              <div class="container border-bottom">
+                <a href="#">Visualizza report approfondito</a>
+              </div>
+
+
+            </div>
+
+
+
+
+          </div>
+
+
+
+        </div>
+        <!-- Flex end -->
+      </div>
+
+
+    </div>
+  </main>
+
+  <!-- Javascript accordion -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

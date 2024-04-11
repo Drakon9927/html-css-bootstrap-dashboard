@@ -1,4 +1,4 @@
-.sidebar{
+.sidebar {
     position: fixed;
     left: 0;
     top: 5rem;
@@ -7,34 +7,35 @@
     height: 100vh;
 }
 
-header{
+header {
     height: 5rem;
     padding-top: 20px;
 }
 
 
-.form-control, .input-group-text{
+.form-control,
+.input-group-text {
     background-color: #E5E5E5;
     border: none;
     padding: 12px;
 }
 
-.myheight90{
+.myheight90 {
     height: 90%;
 }
 
-.myheight10{
+.myheight10 {
     height: 10%;
 }
 
 /* Main */
 
-main{
+main {
     margin-left: 11rem;
     background-color: #F7F7F7;
 }
 
-.mybg-lightblue{
+.mybg-lightblue {
     background-color: #1B72E8;
 }
 
@@ -42,11 +43,11 @@ main{
     background-color: #165BBA !important;
 }
 
-#arrows{
+#arrows {
     font-size: 20px;
 }
 
-#studentbutton{
+#studentbutton {
     background-color: #1B72E8;
     color: white;
     padding: 5px;
@@ -57,59 +58,136 @@ main{
     margin-left: 10px;
 }
 
-.topbox{
+.topbox {
     background-color: #F7F7F7;
-    border-bottom: 1px solid rgba(53,52,52,0.16);
-   
+    border-bottom: 1px solid rgba(53, 52, 52, 0.16);
+
 }
 
-.myroundborder{
+.myroundborder {
     border-radius: 8px;
 
-    border: 1px solid  rgba(53,52,52,0.16); 
+    border: 1px solid rgba(53, 52, 52, 0.16);
 }
 
 /* Tabella  */
 
-.table-custom th:first-child, .table-custom td:first-child {
+.table-custom th:first-child,
+.table-custom td:first-child {
     width: 60%;
 }
-.table-custom th, .table-custom td {
+
+.table-custom th,
+.table-custom td {
     width: 10%;
 }
 
-.w-8{
-    width: 8%;
+.tableimg {
+    width: 50px;
+    height: 60px;
     padding: 5px;
+    min-width: 50px;
+    min-height: 60px;
 }
 
-.mycolouredspan{
+.mycolouredspan {
     border-radius: 14px;
     border: none;
     color: white;
     padding: 8px;
 }
 
-.green{
+.green {
     background-color: green;
 }
 
-.orange{
+.orange {
     background-color: orange;
 }
 
-.red{
+.red {
     background-color: #DC3545;
 }
 
-td i{
+td i {
     background-color: white;
     border: 2px solid grey;
     margin: 2px;
     padding: 3px;
 }
 
-.checkboxcontainer{
-    border: 1px solid rgba(53,52,52,0.16);
+.checkboxcontainer {
+    border: 1px solid rgba(53, 52, 52, 0.16);
     border-radius: 8px;
+}
+
+.sidebar i {
+    margin: 0 10px;
+}
+
+header i {
+    margin: 0 5px;
+    padding-top: 15px;
+}
+
+table td:last-child {
+    white-space: nowrap;
+}
+
+table img {
+    min-width: 10%;
+}
+
+.desktopdisplay {
+    display: none;
+}
+
+/* Media Query */
+/* Tablet */
+@media screen and (max-width: 840px) {
+
+    .displayblock {
+        display: block;
+    }
+
+    .displaynone {
+        display: none;
+    }
+
+    .sidebar {
+        width: 6rem;
+    }
+
+    main {
+        margin-left: 6rem;
+    }
+
+    .desktopdisplay {
+        display: block;
+    }
+
+    .col-md-6 {
+        width: calc();
+    }
+
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+
+   .myflexcolumn{
+    flex-direction: column-reverse;
+    gap: 10px;
+    
+   }
+
+   .mobilewidth{
+    height: 50px;
+    min-width: 40px;
+   }
+
+
+
 }
