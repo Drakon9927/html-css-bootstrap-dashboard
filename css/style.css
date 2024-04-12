@@ -209,9 +209,14 @@ i .fa-bell {
     
    }
 
-   .offcanvas, .col-sm-12, .w-sm-100{
-    width: 100% !important;
-}  
 
+header .container-fluid .row .col-sm-1{
+    flex-wrap: nowrap;  
+    width: 10%;
+}
+
+.d-sm-none{
+    display: none !important; 
+}
 
 }
