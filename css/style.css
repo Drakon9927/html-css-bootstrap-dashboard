@@ -147,14 +147,14 @@ i .fa-bell {
 }
 
 .dropdown-menu {
-    min-width: auto; /* Imposta la larghezza minima a auto */
+    min-width: auto; 
   }
 
 
 
 /* Media Query */
 /* Tablet */
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 769px) {
 
     .displaynone>i:last-child {
         display: block; !important
@@ -186,6 +186,10 @@ i .fa-bell {
         min-width: 40px;
        }
 
+       .offcanvas {
+        width: 100% !important;
+    }      
+
 
 }
 
@@ -193,10 +197,21 @@ i .fa-bell {
 
 @media screen and (max-width: 576px) {
 
-   .myflexcolumn{
+   .myflexcolumnrev{
     flex-direction: column-reverse;
     gap: 10px;
     
    }
+
+   .myflexcolumn{
+    flex-direction: column;
+    gap: 10px;
+    
+   }
+
+   .offcanvas, .col-sm-12, .w-sm-100{
+    width: 100% !important;
+}  
+
 
 }
