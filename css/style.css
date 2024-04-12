@@ -150,6 +150,14 @@ i .fa-bell {
     min-width: auto; 
   }
 
+  .hoverdiv:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
+}
+    
+    
+  
+
 
 
 /* Media Query */
